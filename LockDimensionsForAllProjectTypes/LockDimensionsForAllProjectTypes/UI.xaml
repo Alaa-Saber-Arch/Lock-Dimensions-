@@ -1,0 +1,30 @@
+﻿<Window x:Class="LockDimensionsForAllProjectTypes.UI"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:LockDimensionsForAllProjectTypes"
+             mc:Ignorable="d" 
+             Width="400" Height="180"
+             Title="Dim Lock" WindowStyle="ToolWindow" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.5*"/>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="What Action Do You Want To Take With Dimensions ?" HorizontalAlignment="center" VerticalAlignment="bottom" Grid.ColumnSpan="2" Margin="0,24,0,0" Grid.RowSpan="1" Foreground="DarkBlue" FontSize="14"/>
+        <Rectangle Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="41" Grid.Row="3" VerticalAlignment="Center" Width="400" Fill="#FF424242" Opacity="0.3" Margin="0,0,0,0" />
+        <WrapPanel  Grid.Row="3" VerticalAlignment="Center" Margin="0,0,10,0" Height="20" Grid.Column="1">
+            <Button Content="Lock" x:Name="LockButton" Margin="0,0,0,0" Background="#FFE2DED4" BorderBrush="#FF98A9D1" Click="LockButton_Click" Width="85" Height="20" Foreground="DarkBlue"/>
+            <Button Content="UnLock" x:Name="UnLockButton" Margin="5,0,0,0" Background="#FFE2DED4" BorderBrush="#FF98A9D1" Click="UnLockButton_Click" Width="85" Height="20" Foreground="DarkBlue"/>
+
+        </WrapPanel>
+
+    </Grid>
+</Window>

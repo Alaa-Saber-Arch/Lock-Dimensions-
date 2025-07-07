@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+	<AddIn Type="Command">
+		<Name>LockDimensionsForAllProjectTypes</Name>
+		<Assembly>LockDimensionsForAllProjectTypes.dll</Assembly>
+		<FullClassName>LockDimensionsForAllProjectTypes.LockDimensionsForAllProjectTypes</FullClassName>
+		<Text>LockDimensionsForAllProjectTypes</Text>
+		<Description>LockDimensionsForAllProjectTypes</Description>
+		<AddInId>
+			55649291-76AB-4652-A6AA-1D182B155D80
+		</AddInId>
+		<VendorId>Alaa</VendorId>
+		<VendorDescription>BIM Developer, alaasaber931@gmail.com</VendorDescription>
+	</AddIn>
+</RevitAddIns>
